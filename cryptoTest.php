@@ -1,4 +1,7 @@
 <?php
+	/*
+	https://www.zimuel.it/blog/strong-cryptography-in-php
+	*/
 	$algo = 'aes-256-gcm';
 	$iv   = random_bytes(openssl_cipher_iv_length($algo));
 	$key  = random_bytes(32); // 256 bit
